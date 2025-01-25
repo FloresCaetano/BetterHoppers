@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterhoppers",
+	"version": "${version}",
+	"name": "BetterHoppers",
+	"description": "Un mod que optimiza los hoppers usando paralelismo",
+	"authors": [
+		"Caetano Flores - Andres Romero - Bryan Jumbo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterhoppers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.paralela.betterhoppers.BetterHoppers"
+		],
+		"fabric-datagen": [
+			"com.paralela.betterhoppers.BetterHoppersDataGenerator"
+		],
+		"client": [
+			"com.paralela.betterhoppers.BetterHoppersClient"
+		]
+	},
+	"mixins": [
+		"betterhoppers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
