@@ -3,7 +3,8 @@
 	"package": "com.paralela.betterhoppers.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ParalelHopper"
 	],
 	"injectors": {
 		"defaultRequire": 1
